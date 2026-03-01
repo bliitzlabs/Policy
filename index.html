@@ -1,10 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Bliitz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flow — Privacy Policy & Terms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f5f2ec;
+      --ink: #1a1714;
+      --muted: #6b6560;
+      --accent: #c8521a;
+      --rule: #d9d3c8;
+      --card: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      padding: 3.5rem 2rem 2.5rem;
+      max-width: 780px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.4rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .header-meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-align: right;
+      line-height: 1.5;
+    }
+
+    /* Main content */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .intro {
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 3rem;
+    }
+
+    .intro p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 560px;
+      font-style: italic;
+      font-family: 'DM Serif Display', serif;
+      line-height: 1.6;
+    }
+
+    /* Sections */
+    .section {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 2rem;
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--rule);
+      opacity: 0;
+      transform: translateY(16px);
+      animation: fadeUp 0.5s forwards;
+    }
+
+    .section:nth-child(1)  { animation-delay: 0.05s; }
+    .section:nth-child(2)  { animation-delay: 0.10s; }
+    .section:nth-child(3)  { animation-delay: 0.15s; }
+    .section:nth-child(4)  { animation-delay: 0.20s; }
+    .section:nth-child(5)  { animation-delay: 0.25s; }
+    .section:nth-child(6)  { animation-delay: 0.30s; }
+    .section:nth-child(7)  { animation-delay: 0.35s; }
+    .section:nth-child(8)  { animation-delay: 0.40s; }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-label {
+      padding-top: 0.15rem;
+    }
+
+    .section-number {
+      display: block;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+    }
+
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      line-height: 1.3;
+      color: var(--ink);
+    }
+
+    .section-body {
+      font-size: 0.95rem;
+      color: #3d3834;
+      line-height: 1.75;
+    }
+
+    /* Footer */
+    footer {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2rem 2rem 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer p {
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.03em;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin: 0 0.5rem;
+      vertical-align: middle;
+    }
+
+    /* Responsive */
+    @media (max-width: 620px) {
+      .section {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+      }
+      .header-meta { text-align: left; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Bliitz</h1>
-  <p>Find groups instantly.</p>
+
+  <header>
+    <div class="logo">Fl<span>o</span>w</div>
+    <div class="header-meta">
+      Privacy Policy & Terms<br>
+      Last revised: 2025
+    </div>
+  </header>
+
+  <main>
+    <div class="intro">
+      <p>Simple, honest policies for a simple, honest app. Everything stays on your device.</p>
+    </div>
+
+    <div class="sections">
+
+      <div class="section">
+        <div class="section-label">
+          <span class="section-number">01</span>
+          <div class="section-title">Privacy Policy</div>
+        </div>
+        <p class="section-body">Flow is built on the principle that your files are yours. We do not collect, upload, or transmit any of the files you import into the app. Everything you open or save stays entirely on your device.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-label">
+          <span class="section-number">02</span>
+          <div class="section-title">Data We Do Not Collect</div>
+        </div>
+        <p class="section-body">Flow does not collect personal information, usage analytics, crash reports sent to third parties, or any identifiable data. There are no accounts, no logins, and no cloud sync. Your files never leave your device unless you explicitly share them yourself.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-label">
+          <span class="section-number">03</span>
+          <div class="section-title">Local Storage</div>
+        </div>
+        <p class="section-body">Files you import are copied into Flow's local app storage directory. This is stored only on your device and is removed if you uninstall the app. Scan history and pinned files are stored locally using your device's standard storage mechanisms.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-label">
+          <span class="section-number">04</span>
+          <div class="section-title">Third-Party Services</div>
+        </div>
+        <p class="section-body">Flow does not integrate with any third-party analytics platforms, advertising networks, or tracking services. Any ads displayed within the app are served locally and do not profile or track your behaviour.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-label">
+          <span class="section-number">05</span>
+          <div class="section-title">QR Code Scanner</div>
+        </div>
+        <p class="section-body">QR codes scanned through Flow are processed entirely on-device. Scan results are saved locally in your scan history and are never sent to any external server. You can delete your scan history at any time from within the app.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-label">
+          <span class="section-number">06</span>
+          <div class="section-title">Terms of Use</div>
+        </div>
+        <p class="section-body">Flow is provided as-is for personal use. You agree not to use the app for any unlawful purpose or in any way that could harm others. We reserve the right to update these terms at any time. Continued use of the app after changes constitutes acceptance of the updated terms.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-label">
+          <span class="section-number">07</span>
+          <div class="section-title">Disclaimer</div>
+        </div>
+        <p class="section-body">While we take care to ensure Flow works reliably, we cannot guarantee it is error-free at all times. We are not liable for any loss of data or damages arising from use of the app. Always keep backups of files that are important to you.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-label">
+          <span class="section-number">08</span>
+          <div class="section-title">Changes to This Policy</div>
+        </div>
+        <p class="section-body">We may update this Privacy Policy from time to time. Any changes will be reflected on our website and, where significant, communicated through the app. The date of the latest revision will always be visible at the bottom of this page.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Flow</p>
+    <p>Privacy Policy <span class="dot"></span> Terms of Use</p>
+  </footer>
+
 </body>
 </html>
